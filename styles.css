@@ -1,0 +1,112 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+ul{
+  list-style: none;
+}
+
+body{
+  font-family: var(--roboto);
+}
+
+:root{
+  
+  /* Colors */
+  --orange: #D2872C;
+  --gray: #766F68;
+
+  /* Font  */
+  --roboto: 'Roboto', sans-serif;
+
+
+  font-size: 62.5%;
+}
+
+
+/* Layout */
+.container{
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+.grid{
+  display: grid;
+  gap: 3.2rem;
+}
+
+.title{
+  font: 700 3rem var(--roboto);
+  color: var(--gray);
+}
+
+/* Navigation */
+#header{
+  display: flex;
+  background: white;
+
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  height: 10rem;
+}
+
+nav ul li{
+  text-align: center;
+}
+
+nav ul li a{
+  color: black;
+}
+
+/* Menu */
+
+nav .menu{
+  visibility: hidden;
+  opacity: 0;
+
+  top: -20rem;
+  transition: 0.4s;
+}
+
+nav.show .menu{
+  display: grid;
+  place-content: center;
+  visibility: visible;
+  opacity: 1;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  background: white;
+}
+
+nav.show ul.grid{
+  gap: 7rem;
+}
+
+
+/* Logo */
+.logo{
+  font: var(--roboto);
+  font-size: 3rem;
+
+  color: var(--orange);
+}
