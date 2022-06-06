@@ -287,3 +287,9 @@ section#home{
     margin-right: auto;
   }
 }
+
+@media (min-width:375px) {
+  #header .menu{
+    margin-right: -5rem;
+  }
+}
