@@ -110,3 +110,49 @@ nav.show ul.grid{
 
   color: var(--orange);
 }
+
+/* Main */
+section#home{
+  padding: calc(3rem + 1.5rem) 0;
+}
+
+#home .image{
+  position: relative;
+}
+
+#home .image img{
+  width: 100%;
+  height: auto;
+
+  margin-top: 7rem;
+}
+
+#home .text{
+  color: var(--gray);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 2rem;
+}
+
+.text h1{
+  font-size: 4rem;
+}
+
+.text p{
+  font-size: 2rem;
+}
+
+.text button{
+  background: var(--orange);
+  border-radius: 1.5rem;
+  border: none;
+
+  width: 70%;
+  height: 6rem;
+
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: white;
+}
